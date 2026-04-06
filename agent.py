@@ -9,7 +9,7 @@ class Agent:
         """
         Smart action selection based on current knowledge level
         """
-        knowledge, time_spent = state
+        knowledge, time_spent, energy= state
 
         # 🎯 Strategy based decisions
         if knowledge < 0.3:
