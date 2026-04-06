@@ -1,0 +1,29 @@
+project:
+  name: Adaptive Learning Navigator
+  version: 1.0
+  author: Ayush Pandey
+
+environment:
+  state:
+    - knowledge
+    - time_spent
+    - energy
+  actions:
+    - easy
+    - medium
+    - hard
+    - revise
+    - skip
+  goal: maximize learning while minimizing time
+
+agent:
+  type: heuristic-based
+  strategy: action selection based on knowledge level
+
+metrics:
+  score_formula: knowledge / (time_spent + 1)
+  efficiency: (knowledge * 100) / (time_spent + 1)
+
+deployment:
+  platform: Hugging Face Spaces
+  framework: Gradio
