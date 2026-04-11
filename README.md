@@ -1,5 +1,4 @@
-# #  Adaptive Learning Navigator
-
+#
 A Reinforcement Learning-based system where an AI agent learns efficient study strategies by maximizing knowledge gain and minimizing time.
 
 ##  Features
